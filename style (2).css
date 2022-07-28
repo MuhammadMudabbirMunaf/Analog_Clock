@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(45deg, orange 50%, black 50%);
+}
+.clock{
+    height: 500px;
+    width: 500px;
+    background: black;
+    border-radius: 50%;
+    border: 15px solid orangered;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 30px 5px black;
+    inset: 0 0 10px 1px black;
+}
+svg{
+    height: 100%;
+    width: 100%;
+}
+#hourhand{
+    height: 20%;
+    width: 3%;
+    background-color: white;
+}
+#minhand{
+    height: 25%;
+    width: 2%;
+    background-color: rgb(169, 169, 169);
+}
+#sechand{
+    height: 30%;
+    width: 1%;
+    background-color: orangered;
+}
+#hourhand, #minhand, #sechand{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 50%;
+    z-index: -1;
+    border-radius: 6px;
+    transform-origin: bottom;
+}
